@@ -38,6 +38,6 @@ DEFAULT_PAGINATION = 10
 #RELATIVE_URLS = True
 
 TWITTER_USERNAME = "hamukichi_nbr"
-GITHUB_URL = "https://github.com/hamukichi"
 TYPOGRIFY = True
 LOCALE = "C"
+THEME = "pelican-sober"
