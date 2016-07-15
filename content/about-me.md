@@ -8,9 +8,9 @@ Summary: 簡単な自己紹介です。
 
 よろしくお願いします。
 
-# リンク
+## リンク
 
-## 全般
+### 全般
 
 - [新ブログ](http://hamukichi.hatenablog.jp/)
 - [旧ブログ](http://blog.livedoor.jp/hamu_nbr/)
@@ -18,7 +18,7 @@ Summary: 簡単な自己紹介です。
 - [GitHub](https://github.com/hamukichi)
 - [Twitter](https://twitter.com/hamukichi_nbr)
 
-## 競技プログラミング
+### 競技プログラミング
 
 - [Aizu Online Judge](http://judge.u-aizu.ac.jp/onlinejudge/user.jsp?id=hamukichi)
 -    [AtCoder](http://practice.contest.atcoder.jp/users/hamukichi)
@@ -27,9 +27,9 @@ Summary: 簡単な自己紹介です。
 - [TopCoder](https://www.topcoder.com/members/hamukichi_nbr/)
 - [yukicoder](http://yukicoder.me/users/1143)
 
-# 趣味・好きなもの
+## 趣味・好きなもの
 
-## 現在の趣味・好きなもの
+### 現在の趣味・好きなもの
 
 - プログラミング
     - 競技プログラミング (2015.9 - )
@@ -41,7 +41,7 @@ Summary: 簡単な自己紹介です。
 - 図書館・図書室
 - イストワール（無料RPG）
 
-## かつての趣味・好きなもの
+### かつての趣味・好きなもの
 
 - ウェブサービス
     - コッソリアンケート (2009.5-)
@@ -55,25 +55,25 @@ Summary: 簡単な自己紹介です。
     - デリバリープラネット
     - ニダーラン (2009.12-)
 
-# 使用プログラミング言語
+## 使用プログラミング言語
 
-## 頻繁に使うプログラミング言語
+### 頻繁に使うプログラミング言語
 
 - Python
 
-## よく使うプログラミング言語
+### よく使うプログラミング言語
 
 - Haskell
 - C++
 
-## たまに使うプログラミング言語
+### たまに使うプログラミング言語
 
 - C#
 - Ruby
 - Scala
 - Scheme
 
-## あの頃の思い出
+### あの頃の思い出
 
 - Active Basic
 - HSP
