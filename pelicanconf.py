@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = 'Hamukichi (Nombiri)'
 SITENAME = 'Experimental Site of Hamukichi (Nombiri)'
-SITEURL = ''
+SITEURL = 'http://hamukichi.github.io'
 
 PATH = 'content'
 
@@ -27,7 +27,8 @@ LINKS = ()
 #          ('You can modify those links in your config file', '#'),)
 
 # Social widget
-SOCIAL = ()
+SOCIAL = (('Twitter', 'http://twitter.com/hamukichi_nbr'),
+          ('GitHub', 'http://github.com/hamukichi'),)
 # SOCIAL = (('You can add links in your config file', '#'),
 #           ('Another social link', '#'),)
 
@@ -38,3 +39,5 @@ DEFAULT_PAGINATION = 10
 
 TWITTER_USERNAME = "hamukichi_nbr"
 GITHUB_URL = "https://github.com/hamukichi"
+TYPOGRIFY = True
+LOCALE = "C"
