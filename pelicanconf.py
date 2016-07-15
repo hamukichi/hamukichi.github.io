@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = 'Hamukichi (Nombiri)'
 SITENAME = 'Experimental Site of Hamukichi (Nombiri)'
-SITEURL = 'http://hamukichi.github.io'
+SITEURL = ""
 
 PATH = 'content'
 
