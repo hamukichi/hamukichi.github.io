@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>Character Sorter</title>
+    <meta charset="utf-8">
+    <meta name="description" content="単語を構成する文字をソートします．">
+    <meta name="author" content="はむ吉（のんびり）">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
+    <link rel="stylesheet" href="//cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css">
+    <!--[if lt IE 9]>
+            <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+            <![endif]-->
+</head>
+
+<body>
+    <div id="main-container" class="container">
+        <h1>Character Sorter</h1>
+        <p>入力した語句を構成する文字を整列（ソート）します．ソートなぞなぞやマージなぞなぞの作問に使えます．</p>
+        <form id="input_form" action="">
+            <input id="input_phrase" type="text" value="" list="example_phrases" placeholder="整列したい語句を入力"
+                maxlength="50">
+            <input type="text" id="dummy" style="display:none;">
+            <datalist id="example_phrases">
+                <option value="じゅぜっぺめあっつぁ"></option>
+                <option value="だいきょじゅうがっぱ"></option>
+                <option value="あいでんてぃてぃー"></option>
+                <option value="かみとばみなみはなな"></option>
+            </datalist>
+            <p>整列の結果：<strong><span id="sorting_result">（ここに結果が表示されます）</span></strong></p>
+            <a href="#" class="button">整列</a>
+        </form>
+        <h2>使い方</h2>
+        <p>語句を入力して「整列」ボタンを押してください．するとその語句を構成する文字を昇順に並べたものが出力されます．</p>
+        <h2>注意点</h2>
+        <ul>
+            <li>ブラウザのJavaScriptを有効にしてください．</li>
+            <li>動作確認は Windows 10 上の Google Chrome 76 で行いました．環境によっては正しく動作しないおそれがあります．</li>
+            <li>入力された語句が，一般に通用するものであるとは限りません．</li>
+        </ul>
+
+    </div>
+</body>
+
+</html>
