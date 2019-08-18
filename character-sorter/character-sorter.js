@@ -23,8 +23,6 @@ function sortCharactersFromForm() {
     var shareMessage = "ソートなぞなぞ\n";
     shareMessage += "ソート前の文字列は？ ";
     shareMessage += sortedPhrase;
-    shareMessage += "\npowered by Character Sorter "
-    shareMessage += "https://hamukichi.github.io/character-sorter/";
     setShareButton(shareMessage);
 }
 
