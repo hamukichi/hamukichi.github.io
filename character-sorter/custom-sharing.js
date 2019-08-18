@@ -1,0 +1,2 @@
+/*jslint nomen:true */
+/*global $ */
