@@ -84,6 +84,13 @@
             a2a_config.locale = "ja";
         </script>
         <script src="./custom-sharing.js"></script>
+        <script>
+            var a2a_config = a2a_config || {};
+            a2a_config.callbacks = a2a_config.callbacks || [];
+            a2a_config.callbacks.push({
+                share: sharePhrase
+            });
+        </script>
         <script async src="https://static.addtoany.com/menu/page.js"></script>
         <!-- AddToAny END -->
         <br>
