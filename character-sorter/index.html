@@ -23,24 +23,35 @@
     <div id="main-container" class="container">
         <h1>Character Sorter</h1>
         <p>入力した語句を構成する文字を整列（ソート）します．ソートなぞなぞやマージなぞなぞの作問に使えます．</p>
-        <form id="input_form" action="">
-            <input id="input_phrase" type="text" value="" list="example_phrases" placeholder="整列したい語句を入力" maxlength="50"
-                onkeypress="pressedEnter(event.keyCode);">
-            <a href="#" class="button" onclick="sortCharactersFromForm();">整列</a>
-            <input type="text" id="dummy" style="display:none;">
-            <datalist id="example_phrases">
-                <option value="dictionary"></option>
-                <option value="じゅぜっぺめあっつぁ"></option>
-                <option value="だいきょじゅうがっぱ"></option>
-                <option value="あいでんてぃてぃー"></option>
-                <option value="かみとばみなみはなな"></option>
-            </datalist>
-            <p>整列の結果：<strong><span id="sorting_result">（ここに結果が表示されます）</span></strong></p>
-        </form>
         <div class="row">
             <div class="column">
+                <form id="input_form" action="">
+                    <input id="input_phrase" type="text" value="" list="example_phrases" placeholder="整列したい語句を入力"
+                        maxlength="50" onkeypress="pressedEnter(event.keyCode);">
+                    <a href="#" class="button" onclick="sortCharactersFromForm();">整列</a>
+                    <input type="text" id="dummy" style="display:none;">
+                    <datalist id="example_phrases">
+                        <option value="dictionary"></option>
+                        <option value="じゅぜっぺめあっつぁ"></option>
+                        <option value="アイデンティティー"></option>
+                        <option value="かみとばみなみはなな"></option>
+                        <option value="supercalifragilisticexpialidocious"></option>
+                    </datalist>
+                </form>
+                <p>整列の結果：<strong><span id="sorting_result">（ここに結果が表示されます）</span></strong>
+                </p>
+            </div>
+            <div class="column">
                 <h2>使い方</h2>
-                <p>語句を入力して「整列」ボタンを押してください．するとその語句を構成する文字を昇順に並べたものが出力されます．</p>
+                <p>語句を入力して「整列」ボタンを押してください．するとその語句を構成する文字を辞書式昇順に並べたものが出力されます．</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <h2>結果を tweet する</h2>
+                <p>整列を実行後に，以下をクリックすると，ソートなぞなぞの問題形式で tweet できます．</p>
+                <div class="tweet"></div>
             </div>
             <div class="column">
                 <h2>注意点</h2>
@@ -74,15 +85,14 @@
         <br>
         <p><a href="../" class="button button-outline">トップページに戻る</a></p>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="jquery.socialbutton-1.9.1.js" type="text/javascript"></script>
+    <script src="./character-sorter.js"></script>
     <script>
         $(function () {
-            "use strict";
             setTweetButton();
         });
     </script>
-    <script src="./character-sorter.js"></script>
 </body>
 
 </html>
