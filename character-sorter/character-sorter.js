@@ -7,11 +7,11 @@ function sortCharacters(phrase) {
 }
 
 
-function setTweetButton(msg) {
-    var tweet_msg = msg || "";
+function setShareButton(msg) {
+    var tweetMessage = msg || "";
     $(".tweet").socialbutton("twitter", {
         button: "horizontal",
-        text: tweet_msg + $("title").text()
+        text: tweetMessage + $("title").text()
     });
 }
 
@@ -20,6 +20,12 @@ function sortCharactersFromForm() {
     var inputPhrase = $('#input_phrase').val();
     var sortedPhrase = sortCharacters(inputPhrase);
     $('#sorting_result').html(sortedPhrase);
+    var shareMessage = "ソートなぞなぞ\n";
+    shareMessage += "ソート前の文字列は？ ";
+    shareMessage += sortedPhrase;
+    shareMessage += "\npowered by Character Sorter "
+    shareMessage += "https://hamukichi.github.io/character-sorter/";
+    setShareButton(shareMessage);
 }
 
 
