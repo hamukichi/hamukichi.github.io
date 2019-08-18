@@ -24,8 +24,8 @@
         <h1>Character Sorter</h1>
         <p>入力した語句を構成する文字を整列（ソート）します．ソートなぞなぞやマージなぞなぞの作問に使えます．</p>
         <form id="input_form" action="">
-            <input id="input_phrase" type="text" value="" list="example_phrases" placeholder="整列したい語句を入力"
-                maxlength="50">
+            <input id="input_phrase" type="text" value="" list="example_phrases" placeholder="整列したい語句を入力" maxlength="50"
+                onkeypress="pressedEnter(event.keyCode);">
             <input type="text" id="dummy" style="display:none;">
             <datalist id="example_phrases">
                 <option value="じゅぜっぺめあっつぁ"></option>
@@ -34,7 +34,7 @@
                 <option value="かみとばみなみはなな"></option>
             </datalist>
             <p>整列の結果：<strong><span id="sorting_result">（ここに結果が表示されます）</span></strong></p>
-            <a href="#" class="button">整列</a>
+            <a href="#" class="button" onclick="sortCharactersFromForm();">整列</a>
         </form>
         <h2>使い方</h2>
         <p>語句を入力して「整列」ボタンを押してください．するとその語句を構成する文字を昇順に並べたものが出力されます．</p>
