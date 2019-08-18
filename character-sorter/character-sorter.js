@@ -23,7 +23,7 @@ function sortCharactersFromForm() {
     var shareMessage = "ソートなぞなぞ \n";
     shareMessage += "ソート前の文字列は？ ";
     shareMessage += sortedPhrase;
-    shareMessage += " \n";
+    shareMessage += " \n\n";
     setShareButton(shareMessage);
 }
 
