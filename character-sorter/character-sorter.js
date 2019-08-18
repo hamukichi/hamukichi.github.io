@@ -7,6 +7,15 @@ function sortCharacters(phrase) {
 }
 
 
+function setTweetButton(msg) {
+    var tweet_msg = msg || "";
+    $(".tweet").socialbutton("twitter", {
+        button: "horizontal",
+        text: tweet_msg + $("title").text()
+    });
+}
+
+
 function sortCharactersFromForm() {
     var inputPhrase = $('#input_phrase').val();
     var sortedPhrase = sortCharacters(inputPhrase);
