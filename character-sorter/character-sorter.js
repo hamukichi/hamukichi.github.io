@@ -3,7 +3,7 @@
 
 
 function sortCharacters(phrase) {
-    return phrase.split('').sort('').join('');
+    return phrase.split('').sort().join('');
 }
 
 
