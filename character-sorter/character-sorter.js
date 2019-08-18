@@ -20,9 +20,10 @@ function sortCharactersFromForm() {
     var inputPhrase = $('#input_phrase').val();
     var sortedPhrase = sortCharacters(inputPhrase);
     $('#sorting_result').html(sortedPhrase);
-    var shareMessage = "ソートなぞなぞ\n";
+    var shareMessage = "ソートなぞなぞ \n";
     shareMessage += "ソート前の文字列は？ ";
     shareMessage += sortedPhrase;
+    shareMessage += " \n";
     setShareButton(shareMessage);
 }
 
