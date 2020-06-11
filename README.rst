@@ -3,7 +3,7 @@ hamukichi.github.io
 ===================
 
 
-`はむ吉（のんびり）の掘っ立て小屋 <https://hamukichi.github.io>`_ のソースコードです．
+`Hamukichi (Nombiri)'s Hut <https://hamukichi.github.io>`_ のソースコードです．
 
 著作権・ライセンス情報
 ====================
@@ -27,4 +27,3 @@ jQuery.socialbutton
     * 
     * Version: 1.9.1
     */
-
