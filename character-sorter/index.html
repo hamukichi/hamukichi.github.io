@@ -1,0 +1,99 @@
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title>Character Sorter</title>
+    <meta charset="utf-8">
+    <meta name="description" content="単語を構成する文字をソートします．">
+    <meta name="author" content="はむ吉（のんびり）">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/milligram/1.4.0/milligram.min.css">
+    <!--[if lt IE 9]>
+            <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+            <![endif]-->
+</head>
+
+<body>
+    <div id="main-container" class="container">
+        <h1>Character Sorter</h1>
+        <p>入力した語句を構成する文字を整列（ソート）します．ソートなぞなぞやマージなぞなぞの作問に使えます．</p>
+        <div class="row">
+            <div class="column">
+                <form id="input_form" action="">
+                    <input id="input_phrase" type="text" value="" list="example_phrases" placeholder="整列したい語句を入力"
+                        maxlength="50" onkeypress="pressedEnter(event.keyCode);">
+                    <a href="#" class="button" onclick="sortCharactersFromForm();">整列</a>
+                    <input type="text" id="dummy" style="display:none;">
+                    <datalist id="example_phrases">
+                        <option value="dictionary"></option>
+                        <option value="じゅぜっぺめあっつぁ"></option>
+                        <option value="アイデンティティー"></option>
+                        <option value="かみとばみなみはなな"></option>
+                        <option value="supercalifragilisticexpialidocious"></option>
+                    </datalist>
+                </form>
+                <p>整列の結果：<strong><span id="sorting_result">（ここに結果が表示されます）</span></strong>
+                </p>
+            </div>
+            <div class="column">
+                <h2>使い方</h2>
+                <p>語句を入力して「整列」ボタンを押してください．するとその語句を構成する文字を辞書式昇順に並べたものが出力されます．</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <h2>結果を tweet する</h2>
+                <p>整列を実行後に，以下をクリックすると，ソートなぞなぞの問題形式で tweet できます．</p>
+                <div class="tweet"></div>
+            </div>
+            <div class="column">
+                <h2>注意点</h2>
+                <ul>
+                    <li>ブラウザの JavaScript を有効にしてください．</li>
+                    <li>動作確認は Windows 10 上の Google Chrome 76 で行いました．
+                        <ul>
+                            <li>環境によっては正しく動作しないおそれがあります．</li>
+                        </ul>
+                    </li>
+                    <li>入力された語句が，一般に通用するものであるとは限りません．
+                        <ul>
+                            <li>現在辞書によるチェック機能の実装を検討中です．</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <h2>更新履歴</h2>
+                <ul>
+                    <li>Version 0.1.0 (2019-08-18)
+                        <ul>
+                            <li>初版</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <br>
+        <p><a href="../" class="button button-outline">トップページに戻る</a></p>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="jquery.socialbutton-1.9.1.js" type="text/javascript"></script>
+    <script src="./character-sorter.js"></script>
+    <script>
+        $(function () {
+            setShareButton();
+        });
+    </script>
+</body>
+
+</html>
