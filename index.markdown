@@ -54,7 +54,7 @@ list_title: ' '
 - Secondhand books
 - Dictionaries (in Japanese or English)
 - <i>Histoire</i>: a role-playing game, free of charge
-- Competitive Kuso Nazonazo (riddles)
+- Competitive Kuso Nazonazo (riddles): [my results](./kusonazonazo-rating)
 
 ### My Past Hobbies and Interests
 
