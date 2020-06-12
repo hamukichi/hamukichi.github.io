@@ -9,10 +9,16 @@ list_title: ' '
 
 ## Works
 
+### Competitive Programming
+
+- [SunflowerSeed](https://github.com/hamukichi/SunflowerSeeds): implementations of basic algorithms and data structures, mainly in Python
+
 ### Word Games
 
 - [Character Sorter](./character-sorter/): for "sorting" riddles
+- [SortingRiddleGenerator](https://github.com/hamukichi/SortingRiddleGenerator)
 - [『口先番長』得点計算機](http://blog.livedoor.jp/hamu_nbr/kuchisaki/index.html)
+- [pyKayacIm](https://github.com/hamukichi/pykayacim)
 
 ### Assisting Developments
 
