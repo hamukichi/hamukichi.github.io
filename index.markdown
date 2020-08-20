@@ -32,6 +32,7 @@ list_title: ' '
 - [Hamukichi (Nombiri)'s Jotter](http://blog.livedoor.jp/hamu_nbr/): my old blog
 - [GitHub](https://github.com/hamukichi)
 - [Twitter](https://twitter.com/hamukichi_nbr)
+- [Instagram](https://www.instagram.com/hamukichi_nbr/)
 - [Misskey.io](https://misskey.io/@hamukichi)
 - [Pawoo.net](https://pawoo.net/@hamukichi_nbr)
 - [Keybase](https://keybase.io/hamukichi)
