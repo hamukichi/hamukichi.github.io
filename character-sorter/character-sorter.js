@@ -30,7 +30,7 @@ function sortCharactersFromForm() {
         shareMessage += "マージ＆ソート前の語句は？ ";
     }
     shareMessage += sortedPhrase;
-    shareMessage += " \n\n";
+    shareMessage += " \n";
     setShareButton(shareMessage);
 }
 
