@@ -11,7 +11,7 @@ function setShareButton(msg) {
     var tweetMessage = msg || "";
     $(".tweet").socialbutton("twitter", {
         button: "horizontal",
-        text: tweetMessage + $("title").text()
+        text: tweetMessage
     });
 }
 
