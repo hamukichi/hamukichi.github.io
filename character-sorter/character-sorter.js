@@ -11,8 +11,7 @@ function setShareButton(msg) {
     var tweetMessage = msg || "";
     $(".tweet").socialbutton("twitter", {
         button: "horizontal",
-        text: tweetMessage,
-        url: $('#include_uri').prop("checked") ? location.href : ""
+        text: tweetMessage
     });
 }
 
