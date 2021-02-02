@@ -18,16 +18,19 @@ function setShareButton(msg) {
 
 function sortCharactersFromForm() {
     var inputPhrase = $('#input_phrase').val();
+    if ($('#remove_spaces').prop("checked")) {
+        inputPhrase = inputPhrase.replace(/\s+/g, "");
+    }
     var numWords = parseInt($('#num_words').val());
     var sortedPhrase = sortCharacters(inputPhrase);
     $('#sorting_result').html(sortedPhrase);
     var shareMessage = "";
     if (numWords <= 1) {
         shareMessage += "ソートなぞなぞ \n";
-        shareMessage += "ソート前の文字列は？ ";   
+        shareMessage += "ソート前の文字列は？ \n";   
     } else {
-        shareMessage += "マージなぞなぞ（もとは " + String(numWords) + " 語） \n"
-        shareMessage += "マージ＆ソート前の語句は？ ";
+        shareMessage += "マージなぞなぞ（" + String(numWords) + " 語） \n"
+        shareMessage += "マージ＆ソート前の語句は？ \n";
     }
     shareMessage += sortedPhrase;
     shareMessage += " \n";
