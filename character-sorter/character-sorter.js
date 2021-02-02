@@ -17,7 +17,10 @@ function setShareButton(msg) {
 
 
 function sortCharactersFromForm() {
-    var inputPhrase = $('#input_phrase').val().replace(/\s+/g, "");
+    var inputPhrase = $('#input_phrase').val();
+    if ($('#remove_spaces').prop("checked")) {
+        inputPhrase = inputPhrase.replace(/\s+/g, "");
+    }
     var numWords = parseInt($('#num_words').val());
     var sortedPhrase = sortCharacters(inputPhrase);
     $('#sorting_result').html(sortedPhrase);
