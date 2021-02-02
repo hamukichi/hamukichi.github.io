@@ -27,8 +27,12 @@
         <div class="row">
             <div class="column">
                 <form id="input_form" action="">
-                    <input id="input_phrase" type="text" value="" list="example_phrases" placeholder="整列したい語句を入力"
+                    <label>
+                        語句：
+                        <input id="input_phrase" type="text" value="" list="example_phrases" placeholder="整列したい語句を入力"
                         maxlength="50" onkeypress="pressedEnter(event.keyCode);">
+                    </label>
+                    <label>語句の数：<input id="num_words" type="number" value="1" min="1"></label>
                     <a href="#" class="button" onclick="sortCharactersFromForm();">整列</a>
                     <input type="text" id="dummy" style="display:none;">
                     <datalist id="example_phrases">
@@ -51,7 +55,7 @@
         <div class="row">
             <div class="column">
                 <h2>結果を tweet する</h2>
-                <p>整列を実行後に，以下をクリックすると，ソートなぞなぞの問題形式で tweet できます．</p>
+                <p>整列を実行後に，以下をクリックすると，ソート（語句の数が 1 のとき）／マージなぞなぞ（語句の数が 2 以上のとき）の問題形式で tweet できます．</p>
                 <div class="tweet"></div>
             </div>
             <div class="column">
