@@ -29,10 +29,9 @@
                 <form id="input_form" action="">
                     <label>
                         語句
-                        <input id="input_phrase" type="text" value="" list="example_phrases" placeholder="整列したい語句を入力"
-                        maxlength="1000" onkeypress="pressedEnter(event.keyCode);">
+                        <textarea id="input_phrase" rows="5" placeholder="ここにソートしたい語句を入力してください"></textarea>
                     </label>
-                    <label>語句の数 <input id="num_words" type="number" value="1" min="1" style="width: 80px;" onkeypress="pressedEnter(event.keyCode);"></label>
+                    <label>語句の数（> 2 でマージなぞなぞ） <input id="num_words" type="number" value="1" min="1" style="width: 80px;" onkeypress="pressedEnter(event.keyCode);"></label>
                     <label><input type="checkbox" id="remove_spaces" checked>空白を除去する</label>
                     <a href="#" class="button" onclick="sortCharactersFromForm();">ソート</a>
                     <input type="text" id="dummy" style="display:none;">
@@ -42,10 +41,10 @@
                         <option value="こぶた　たぬき　きつね　ねこ"></option>
                     </datalist>
                 </form>
-                <p><strong><span id="sorting_result">（ここに結果が表示されます）</span></strong>
+                <p>ソートの結果：<strong><span id="sorting_result">（ここに結果が表示されます）</span></strong>
                 </p>
                 <div class="tweet"></div>
-                <textarea id="sorting_question" readonly placeholder="（ここにソート／マージなぞなぞとしての問題文が表示されます）"></textarea>
+                <textarea id="sorting_question" rows="5" readonly placeholder="ここにソート／マージなぞなぞとしての問題文が表示されます"></textarea>
             </div>
         </div>
 
