@@ -23,18 +23,17 @@
 <body>
     <div id="main-container" class="container">
         <h1>Character Sorter</h1>
-        <p>入力した語句を構成する文字を整列（ソート）します．<a href="http://ti11192916.hatenablog.com/entry/2019/12/11/000002">ソートなぞなぞやマージなぞなぞ</a>の作問に使えます．</p>
+        <p>入力した語句を構成する文字をソート（整列）します．<a href="http://ti11192916.hatenablog.com/entry/2019/12/11/000002">ソートなぞなぞやマージなぞなぞ</a>の作問に使えます．</p>
         <div class="row">
             <div class="column">
                 <form id="input_form" action="">
                     <label>
                         語句
-                        <input id="input_phrase" type="text" value="" list="example_phrases" placeholder="整列したい語句を入力"
-                        maxlength="300" onkeypress="pressedEnter(event.keyCode);">
+                        <textarea id="input_phrase" rows="10" placeholder="ここにソートしたい語句を入力してください"></textarea>
                     </label>
-                    <label>語句の数 <input id="num_words" type="number" value="1" min="1" style="width: 80px;" onkeypress="pressedEnter(event.keyCode);"></label>
+                    <label>語句の数（2 以上でマージなぞなぞ） <input id="num_words" type="number" value="1" min="1" style="width: 80px;" onkeypress="pressedEnter(event.keyCode);"></label>
                     <label><input type="checkbox" id="remove_spaces" checked>空白を除去する</label>
-                    <a href="#" class="button" onclick="sortCharactersFromForm();">整列</a>
+                    <a href="#" class="button" onclick="sortCharactersFromForm();">ソート</a>
                     <input type="text" id="dummy" style="display:none;">
                     <datalist id="example_phrases">
                         <option value="dictionary"></option>
@@ -42,18 +41,23 @@
                         <option value="こぶた　たぬき　きつね　ねこ"></option>
                     </datalist>
                 </form>
-                <p>整列の結果：<strong><span id="sorting_result">（ここに結果が表示されます）</span></strong><div class="tweet"></div>
+                <p>ソートの結果：<strong><span id="sorting_result">（ここに結果が表示されます）</span></strong>
                 </p>
+                <div class="tweet"></div>
+                <textarea id="sorting_question" rows="10" readonly placeholder="ここにソート／マージなぞなぞとしての問題文が表示されます"></textarea>
             </div>
         </div>
 
         <div class="row">
             <div class="column">
                 <h2>使い方</h2>
-                <p>語句とその数を入力し，「整列」ボタンを押してください．
+                <p>語句とその数を入力し，「ソート」ボタンを押してください．
                     複数の語句を使う場合（マージなぞなぞ）にも，そのまま続けて入力してください．
-                    するとその語句を構成する文字をつなげて，辞書式昇順に並べたものが出力されます．</p>
-                    <p>整列を実行後に，「ツイート」をクリックすると，ソートなぞなぞ（1 語の場合）またはマージなぞなぞ（2 語以上の場合）の問題形式で投稿できます．</p>
+                    するとその語句を構成する文字をつなげて，辞書式昇順（正確には UTF-16 のコードの昇順）に並べたものが出力されます．</p>
+                <p>「ソート」を押下する前に，「空白を除去する」をチェックしておくと，入力した語句中の空白が除去されてからソートが実行されます．
+                    マージなぞなぞの際に有用です．
+                </p>
+                <p>ソートを実行後に，「ツイート」をクリックすると，ソートなぞなぞ（1 語の場合）またはマージなぞなぞ（2 語以上の場合）の問題形式で投稿できます．</p>
             </div>
             <div class="column">
                 <h2>注意点</h2>
@@ -76,6 +80,13 @@
             <div class="column">
                 <h2>更新履歴</h2>
                 <ul>
+                    <li>Version 0.3.0 (2021-02-09)
+                        <ul>
+                            <li>語句の入力欄を拡張</li>
+                            <li>作成されたソート／マージなぞなぞの問題文を表示するように</li>
+                            <li>その他，細部の修正</li>
+                        </ul>
+                    </li>
                     <li>Version 0.2.1 (2021-02-03)
                         <ul>
                             <li>入力された語から空白を自動的に削除できるように変更</li>
