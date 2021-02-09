@@ -29,9 +29,9 @@
                 <form id="input_form" action="">
                     <label>
                         語句
-                        <textarea id="input_phrase" rows="5" placeholder="ここにソートしたい語句を入力してください"></textarea>
+                        <textarea id="input_phrase" rows="10" placeholder="ここにソートしたい語句を入力してください"></textarea>
                     </label>
-                    <label>語句の数（> 2 でマージなぞなぞ） <input id="num_words" type="number" value="1" min="1" style="width: 80px;" onkeypress="pressedEnter(event.keyCode);"></label>
+                    <label>語句の数（2 以上でマージなぞなぞ） <input id="num_words" type="number" value="1" min="1" style="width: 80px;" onkeypress="pressedEnter(event.keyCode);"></label>
                     <label><input type="checkbox" id="remove_spaces" checked>空白を除去する</label>
                     <a href="#" class="button" onclick="sortCharactersFromForm();">ソート</a>
                     <input type="text" id="dummy" style="display:none;">
@@ -44,7 +44,7 @@
                 <p>ソートの結果：<strong><span id="sorting_result">（ここに結果が表示されます）</span></strong>
                 </p>
                 <div class="tweet"></div>
-                <textarea id="sorting_question" rows="5" readonly placeholder="ここにソート／マージなぞなぞとしての問題文が表示されます"></textarea>
+                <textarea id="sorting_question" rows="10" readonly placeholder="ここにソート／マージなぞなぞとしての問題文が表示されます"></textarea>
             </div>
         </div>
 
@@ -80,6 +80,13 @@
             <div class="column">
                 <h2>更新履歴</h2>
                 <ul>
+                    <li>Version 0.3.0 (2021-02-09)
+                        <ul>
+                            <li>語句の入力欄を拡張</li>
+                            <li>作成されたソート／マージなぞなぞの問題文を表示するように</li>
+                            <li>その他，細部の修正</li>
+                        </ul>
+                    </li>
                     <li>Version 0.2.1 (2021-02-03)
                         <ul>
                             <li>入力された語から空白を自動的に削除できるように変更</li>
