@@ -34,6 +34,7 @@ function sortCharactersFromForm() {
     }
     shareMessage += sortedPhrase;
     shareMessage += " \n";
+    $('#sorting_question').val(shareMessage);
     setShareButton(shareMessage);
 }
 
