@@ -36,6 +36,7 @@ list_title: ' '
 - [Misskey.io](https://misskey.io/@hamukichi)
 - [Pawoo.net](https://pawoo.net/@hamukichi_nbr)
 - [Keybase](https://keybase.io/hamukichi)
+- [Bluesky](https://bsky.app/profile/hamukichi.bsky.social)
 
 ### Competitive Programming
 
