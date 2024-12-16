@@ -12,21 +12,19 @@ list_title: ' '
 ### Word Games
 
 - [Character Sorter](./character-sorter/): for "sorting" riddles
-- [『口先番長』得点計算機](http://blog.livedoor.jp/hamu_nbr/kuchisaki/index.html)
 
 ## Links to the Services I use
 
 ### Blogs and Social Networking Services 
 
-- [Hamukichi (Nombiri)'s Notebook](http://hamukichi.hatenablog.jp/): my new blog
-- [Hamukichi (Nombiri)'s Jotter](http://blog.livedoor.jp/hamu_nbr/): my old blog
 - [GitHub](https://github.com/hamukichi)
-- [Twitter](https://twitter.com/hamukichi_nbr)
+- [X (formerly Twitter)](https://twitter.com/hamukichi_nbr)
 - [Instagram](https://www.instagram.com/hamukichi_nbr/)
 - [Misskey.io](https://misskey.io/@hamukichi)
 - [Pawoo.net](https://pawoo.net/@hamukichi_nbr)
 - [Keybase](https://keybase.io/hamukichi)
 - [Bluesky](https://bsky.app/profile/hamukichi.bsky.social)
+- mixi2: `@hmkc`
 
 ### Competitive Programming
 
